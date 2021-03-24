@@ -47,28 +47,3 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     
     def __str__(self):
         return self.email
-
-    
-class Schools(models.model)
-    # Db model for the schools created by admin for school owners
-    school_name = models.CharField(max_length=254)
-    reg_number = models.CharField(max_length=254)
-    owned_by = models.CharField(max_length=254)
-    
-class Courses(models.model)
-    # Db model for the courses created by the tutors for the students
-    course_name = models.CharField(max_length=254)
-
-
-class Lecturer(models.model)
-    # Db model for the lecturers created by the school owner for tutors
-    tutor_name = models.CharField(max_length=254)
-    idnumber = = models.IntegerField()
-    subject = models.CharField(max_length=254)
-    
-
-
-class Students(models.model)
-    # Db model for the students
-    student_name = models.CharField(max_length=254)
-    id_num = models.CharField(max_length=254)
